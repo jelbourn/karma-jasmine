@@ -218,10 +218,6 @@ function KarmaReporter (tc, jasmineEnv) {
       return
     }
 
-    // Any errors in afterAll blocks are given here, except for top-level
-    // afterAll blocks.
-    handleGlobalErrors(result)
-
     currentSuite = currentSuite.parent
   }
 
